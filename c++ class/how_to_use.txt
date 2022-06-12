@@ -1,0 +1,13 @@
+TO RUN:
+	make 
+	make test
+	make clean
+
+"make" runs the compiler and generates an executable. "make test" runs tests. "make clean" cleans teh output of previous test.
+
+Before re-testing the code, do not forget to run "make clean".
+
+
+ 
+
+Note: Passing make test does not guarantee the correctness of your program. Testing thoroughly is your responsibility.
