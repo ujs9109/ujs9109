@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.7.12.202205250418" AlpVersion="8.7.5">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.7.12.202205250359" AlpVersion="8.7.5">
 <Model>
 	<Id>1654759335877</Id>
 	<Name><![CDATA[Airport_Maintenance]]></Name>
@@ -155,6 +155,156 @@ import java.util.ArrayList;]]></Import>
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[5]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655089636511</Id>
+					<Name><![CDATA[shape12_time]]></Name>
+					<X>730</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[25]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655089803785</Id>
+					<Name><![CDATA[shape13_time]]></Name>
+					<X>730</X><Y>65</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[30]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655089804768</Id>
+					<Name><![CDATA[shape23_time]]></Name>
+					<X>730</X><Y>97</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[35]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655098736468</Id>
+					<Name><![CDATA[type]]></Name>
+					<X>900</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655098738314</Id>
+					<Name><![CDATA[count]]></Name>
+					<X>970</X><Y>140</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655099502862</Id>
+					<Name><![CDATA[period]]></Name>
+					<X>970</X><Y>169</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655180913829</Id>
+					<Name><![CDATA[TBMT]]></Name>
+					<X>580</X><Y>60</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[400]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655180913831</Id>
+					<Name><![CDATA[CBMT]]></Name>
+					<X>580</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[300]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655180913833</Id>
+					<Name><![CDATA[OMT]]></Name>
+					<X>580</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[500]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1655181658607</Id>
+					<Name><![CDATA[Cannot_distribution]]></Name>
+					<X>580</X><Y>130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -1265,7 +1415,529 @@ import java.util.ArrayList;]]></Import>
 						<Point><X>510</X><Y>570</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1655100969976</Id>
+					<Name><![CDATA[connector33]]></Name>
+					<X>830</X><Y>648</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[sink8]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Checking4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outT]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-310</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969978</Id>
+					<Name><![CDATA[connector34]]></Name>
+					<X>500</X><Y>648</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Checking4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Mission_proceed4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-60</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969980</Id>
+					<Name><![CDATA[connector35]]></Name>
+					<X>830</X><Y>678</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[sink9]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Maintenence4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-170</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969982</Id>
+					<Name><![CDATA[connector36]]></Name>
+					<X>70</X><Y>408</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Mission_proceed4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>330</X><Y>240</Y></Point>
+						<Point><X>300</X><Y>240</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969984</Id>
+					<Name><![CDATA[connector37]]></Name>
+					<X>70</X><Y>408</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[hold4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>280</X><Y>240</Y></Point>
+						<Point><X>260</X><Y>240</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969986</Id>
+					<Name><![CDATA[connector38]]></Name>
+					<X>0</X><Y>88</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Maintenence4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[MO5]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>620</X><Y>590</Y></Point>
+						<Point><X>580</X><Y>589</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100969988</Id>
+					<Name><![CDATA[connector39]]></Name>
+					<X>0</X><Y>88</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[MO5]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[Checking4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+						<ItemName><![CDATA[outF]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>560</X><Y>589</Y></Point>
+						<Point><X>550</X><Y>590</Y></Point>
+						<Point><X>510</X><Y>590</Y></Point>
+						<Point><X>510</X><Y>570</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1655100974916</Id>
+					<Name><![CDATA[connector40]]></Name>
+					<X>290</X><Y>648</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[queue4]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[selectOutput5]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput5]]></ClassName>
+						<ItemName><![CDATA[out5]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-70</X><Y>2</Y></Point>
+						<Point><X>-70</X><Y>-208</Y></Point>
+						<Point><X>-90</X><Y>-208</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[int]]></ReturnType>
+					<Id>1655086222490</Id>
+					<Name><![CDATA[function_allocation]]></Name>
+					<X>80</X><Y>680</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[mission_shape]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[shape12_time]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[shape13_time]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[shape23_time]]></Name>
+						<Type><![CDATA[double]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[period]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[error]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Body><![CDATA[class Airport {
+    private String name;
+    private double TBM;
+    private double residual;
+    private boolean idle;
+    private int shape;
+    private double Resting_Time;
+    private double MT_time;
+    private int period;
+    
+
+    public Airport(String name, double TBM, double residual,boolean idle, int shape, double Resting_Time, int period, double MT_time) {
+        this.name = name;
+        this.TBM = TBM;
+        this.residual = residual;
+        this.idle = idle;
+        this.shape =shape;
+        this.Resting_Time = Resting_Time;
+        this.period = period;
+        this.MT_time = MT_time;
+    }
+    
+    public double getTBM(){
+    	return this.TBM;
+    }
+    public int getperiod(){
+    	return this.period;
+    }
+    public double getRT(){
+    	return this.Resting_Time;
+    }
+    public String getname(){
+    	return this.name;
+    }
+    
+    public boolean getIdle(){
+    	return this.idle;
+    }
+    public int getShape(){
+    	return this.shape;
+    }
+    public double getresidual(){
+    	return this.residual;
+    }
+    public void setResidual(double R){
+    	this.residual = R;
+    }
+    public void setPeriod(int R){
+    	this.period = R;
+    }
+	
+    public String toString() {
+        return "Airport{" +
+                "name='" + name + '\'' +
+                ", TBM=" + TBM + '\'' + 
+                ", Residual=" + residual +
+                ", IDLE=" + idle +
+                ", Shape=" + shape +
+                ", Mission='" + mission_shape + '\'' +
+                ", Resting time=" + Resting_Time +
+                ", period=" + period +
+                ", MT_Time=" + MT_time +
+                '}' + '\n';
+    }
+}
+     
+List<Airport> Airports = new ArrayList<>();
+Airports.add(new Airport("airplane5", airplane5.TBM, 0, airplane5.idle, airplane5.shape, airplane5.Resting_Time, airplane5.period_count, airplane5.immediately_time));
+Airports.add(new Airport("airplane4", airplane4.TBM, 0, airplane4.idle, airplane4.shape, airplane4.Resting_Time, airplane4.period_count, airplane4.immediately_time));
+Airports.add(new Airport("airplane3", airplane3.TBM, 0, airplane3.idle, airplane3.shape, airplane3.Resting_Time, airplane3.period_count, airplane3.immediately_time));
+Airports.add(new Airport("airplane2", airplane2.TBM, 0, airplane2.idle, airplane2.shape, airplane2.Resting_Time, airplane2.period_count, airplane2.immediately_time));
+Airports.add(new Airport("airplane1", airplane1.TBM, 0, airplane1.idle, airplane1.shape, airplane1.Resting_Time, airplane1.period_count, airplane1.immediately_time));
+
+//traceln("ORIGINAL STATE");
+//traceln(Airports);
+//traceln();
+Collections.sort(Airports, new Comparator<Airport>(){
+	@Override
+	public int compare(Airport p1, Airport p2){
+	if(p1.getTBM() > p2.getTBM()){return 1;}
+	else if (p1.getTBM() < p2.getTBM()){return -1;}
+	else{return 0;}
+	}
+});
+
+//traceln("Sorting TBM");
+//traceln(Airports);
+//traceln();
+
+Airports.get(0).setResidual(
+Airports.get(0).getTBM() + (100 - Airports.get(4).getTBM())
+);
+
+Airports.get(1).setResidual(
+Airports.get(1).getTBM()- Airports.get(0).getTBM()
+);
+
+Airports.get(2).setResidual(
+Airports.get(2).getTBM()- Airports.get(1).getTBM()
+);
+
+Airports.get(3).setResidual(
+Airports.get(3).getTBM()- Airports.get(2).getTBM()
+);
+
+Airports.get(4).setResidual(
+Airports.get(4).getTBM()- Airports.get(3).getTBM()
+);
+
+// 바쁘면,Residual 0
+//traceln(Airports);
+for(int i = 0; i<=4; i++){
+
+	if (Airports.get(i).getIdle() == false){
+	Airports.get(i).setResidual(0);
+	
+	if (i <=3){
+	Airports.get(i+1).setResidual(
+	// OM setting (pessimistic) => 500
+	Airports.get(i+1).getTBM() + (20.0/500.0 * (time() - Airports.get(i).MT_time))
+	);
+	}
+	}
+}
+//traceln(Airports);
+//traceln();
+//traceln("Calculating Residual");
+//traceln(Airports);
+//traceln();
+
+// 형상 시간초과면 Residual 0 
+for(int i = 0; i<=4; i++){
+	// if getshape() ==0 pass
+	int j = Airports.get(i).getShape();
+	if (j != 0){
+	// if airplane's shape and mission shape differ
+	if (j != mission_shape){
+	
+		if ((j == 1) & (mission_shape == 2)){
+		if (Airports.get(i).getRT() < shape12_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+		if ((j == 1) & (mission_shape == 3)){
+		if (Airports.get(i).getRT() < shape13_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+			
+		if ((j == 2) & (mission_shape == 1)){
+		if (Airports.get(i).getRT() < shape12_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+		if ((j == 2) & (mission_shape == 3)){
+		if (Airports.get(i).getRT() < shape23_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+			
+			
+		if ((j == 3) & (mission_shape == 1)){
+		if (Airports.get(i).getRT() < shape13_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+		if ((j == 3) & (mission_shape == 2)){
+		if (Airports.get(i).getRT() < shape23_time){ 
+			Airports.get(i).setResidual(0);
+			}}
+	}
+}
+}
+
+
+// period same => 0
+for(int i = 0; i<=4; i++){
+	if (Airports.get(i).getperiod() == period){
+	Airports.get(i).setResidual(0);}
+}
+
+Collections.sort(Airports, new Comparator<Airport>(){
+	@Override
+	public int compare(Airport p1, Airport p2){
+	if(p1.getresidual() > p2.getresidual()){return -1;}
+	else if (p1.getresidual() < p2.getresidual()){return 1;}
+	else{return 0;}
+	}
+});
+
+
+
+String result = Airports.get(0).getname();
+
+int result_num = 100;
+
+if (result == "airplane1"){
+result_num = 1;}
+
+if (result == "airplane2"){
+result_num = 2;}
+
+if (result == "airplane3"){
+result_num = 3;}
+
+if (result == "airplane4"){
+result_num = 4;}
+if (result == "airplane5"){
+result_num = 5;}
+
+traceln("Sorting Residual");
+traceln(Airports);
+traceln(result + ' ' + result_num);
+traceln();
+
+if (Airports.get(0).getresidual() ==0){
+Cannot_distribution++;
+traceln("************************************");
+traceln("**** warning : no airport exist *****");
+traceln("************************************");}
+
+return result_num;]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1654759335893</Id>
@@ -1314,16 +1986,23 @@ import java.util.ArrayList;]]></Import>
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[arrivalType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.INTERARRIVAL_TIME]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[30]]></Code>
+								<Code><![CDATA[29]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[interarrivalTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[20]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[firstArrivalMode]]></Name>
@@ -1366,9 +2045,6 @@ import java.util.ArrayList;]]></Import>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.LOCATION_NODE]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[locationX]]></Name>
@@ -1517,15 +2193,34 @@ import java.util.ArrayList;]]></Import>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[int number = (int) (Math.random()*3+1);
+								<Code><![CDATA[if (count ==0){
+count = (int) (Math.random()*3+1);
+type = (int) (Math.random()*3+1);
+period++;
+traceln("count : "  + count);
+traceln("type : " + type);
+count--;
+}
+else{
+count --;
+}
+
+int number = type;
 agent.type = number;
-if (number == 1){agent.workload = 1.5;};
+if (number == 1){agent.workload = 1;};
 if (number == 2){agent.workload = 2;};
-if (number == 3){agent.workload = 2.5;};]]></Code>
+if (number == 3){agent.workload = 3;};]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane1.Resting_Time = time() - airplane1.Resting_Time;
+airplane2.Resting_Time = time() - airplane2.Resting_Time;
+airplane3.Resting_Time = time() - airplane3.Resting_Time;
+airplane4.Resting_Time = time() - airplane4.Resting_Time;
+airplane5.Resting_Time = time() - airplane5.Resting_Time;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onDiscard]]></Name>
@@ -1594,13 +2289,13 @@ if (number == 3){agent.workload = 2.5;};]]></Code>
 						<Parameter>
 							<Name><![CDATA[TBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[25]]></Code>
+								<Code><![CDATA[20]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[CBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[25]]></Code>
+								<Code><![CDATA[20]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1614,6 +2309,18 @@ if (number == 3){agent.workload = 2.5;};]]></Code>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[shape]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[operating_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resting_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[immediately_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[period_count]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -1712,17 +2419,18 @@ if (number == 3){agent.workload = 2.5;};]]></Code>
 
 
 if (airplane1.TBM <Th & airplane1.CBM <Th){
-agent.MT = 50;
+agent.MT = OMT;
 }
 else if (airplane1.TBM <TBM){
-agent.MT = 40;
+agent.MT = TBMT;
 }
 
 else {
-agent.MT = 30;
+agent.MT = CBMT;
 }
 
-airplane1.maintenence = false;]]></Code>
+airplane1.maintenence = false;
+airplane1.immediately_time = time();]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -1892,6 +2600,7 @@ MO1.block();
 MO2.block();
 MO3.block();
 MO4.block();
+MO5.block();
 }]]></Code>
 							</Value>
 						</Parameter>
@@ -1901,7 +2610,13 @@ MO4.block();
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[if (airplane1.TBM <Th & airplane1.CBM <Th){
+								<Code><![CDATA[airplane1.idle = true;
+airplane1.shape = 0;
+airplane1.Resting_Time = 0;
+
+airplane1.resting_time = airplane1.resting_time + time()-airplane1.immediately_time;
+
+if (airplane1.TBM <Th & airplane1.CBM <Th){
 airplane1.TBM = 100;
 airplane1.CBM = 100;
 }
@@ -1922,6 +2637,9 @@ MO1.unblock();
 MO2.unblock();
 MO3.unblock();
 MO4.unblock();
+MO5.unblock();
+
+hold.unblock();
 ]]></Code>
 							</Value>
 						</Parameter>
@@ -1994,7 +2712,7 @@ MO4.unblock();
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[15]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -2022,9 +2740,7 @@ MO4.unblock();
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[airplane1.TBM = airplane1.TBM - TBM;
-airplane1.CBM = airplane1.CBM - agent.workload;
-if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
+								<Code><![CDATA[if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 {hold.block();}]]></Code>
 							</Value>
 						</Parameter>
@@ -2096,9 +2812,6 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[hold.unblock();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destroyEntity]]></Name>
@@ -2238,9 +2951,6 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
-							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2308,13 +3018,13 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						<Parameter>
 							<Name><![CDATA[TBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[50]]></Code>
+								<Code><![CDATA[40]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[CBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[50]]></Code>
+								<Code><![CDATA[40]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2328,6 +3038,18 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[shape]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[operating_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resting_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[immediately_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[period_count]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2395,13 +3117,13 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						<Parameter>
 							<Name><![CDATA[TBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[75]]></Code>
+								<Code><![CDATA[60]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[CBM]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[75]]></Code>
+								<Code><![CDATA[60]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2415,6 +3137,18 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[shape]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[operating_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resting_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[immediately_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[period_count]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2481,9 +3215,15 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[TBM]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[80]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[CBM]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[80]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[Resting_Time]]></Name>
@@ -2496,6 +3236,18 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[shape]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[operating_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resting_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[immediately_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[period_count]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2753,6 +3505,9 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[type]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.TYPE_EXIT_NUMBER]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[condition1]]></Name>
@@ -2798,49 +3553,67 @@ if(airplane1.TBM <TBM | airplane1.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[exitNumber]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[function_allocation(agent.type, shape12_time, shape13_time, shape23_time, period, Cannot_distribution)]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[airplane1.Resting_Time = time() - airplane1.Resting_Time;
-airplane2.Resting_Time = time() - airplane2.Resting_Time;
-airplane3.Resting_Time = time() - airplane3.Resting_Time;
-airplane4.Resting_Time = time() - airplane4.Resting_Time;
-
-
-]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit1]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.moveTo(node1);
-airplane1.shape = agent.type;]]></Code>
+
+airplane1.shape = agent.type;
+airplane1.TBM = airplane1.TBM - TBM;
+airplane1.CBM = airplane1.CBM - agent.workload;
+airplane1.period_count = period;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit2]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.moveTo(node2);
-airplane2.shape = agent.type;]]></Code>
+
+airplane2.shape = agent.type;
+airplane2.TBM = airplane2.TBM - TBM;
+airplane2.CBM = airplane2.CBM - agent.workload;
+airplane2.period_count = period;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit3]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.moveTo(node3);
-airplane3.shape = agent.type;]]></Code>
+
+airplane3.shape = agent.type;
+airplane3.TBM = airplane3.TBM - TBM;
+airplane3.CBM = airplane3.CBM - agent.workload;
+airplane3.period_count = period;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit4]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent.moveTo(node4);
-airplane4.shape = agent.type;]]></Code>
+
+airplane4.shape = agent.type;
+airplane4.TBM = airplane4.TBM - TBM;
+airplane4.CBM = airplane4.CBM - agent.workload;
+airplane4.period_count = period;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit5]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.moveTo(node5);
+
+airplane5.shape = agent.type;
+airplane5.TBM = airplane5.TBM - TBM;
+airplane5.CBM = airplane5.CBM - agent.workload;
+airplane5.period_count = period;]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -2933,17 +3706,18 @@ airplane4.shape = agent.type;]]></Code>
 
 
 if (airplane2.TBM <Th & airplane2.CBM <Th){
-agent.MT = 50;
+agent.MT = OMT;
 }
 else if (airplane2.TBM <TBM){
-agent.MT = 40;
+agent.MT = TBMT;
 }
 
 else {
-agent.MT = 30;
+agent.MT = CBMT;
 }
 
-airplane2.maintenence = false;]]></Code>
+airplane2.maintenence = false;
+airplane2.immediately_time = time();]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -3114,6 +3888,7 @@ MO1.block();
 MO2.block();
 MO3.block();
 MO4.block();
+MO5.block();
 }]]></Code>
 							</Value>
 						</Parameter>
@@ -3123,7 +3898,13 @@ MO4.block();
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[if (airplane2.TBM <Th & airplane2.CBM <Th){
+								<Code><![CDATA[airplane2.idle = true;
+airplane2.shape = 0;
+airplane2.Resting_Time = 0;
+
+airplane2.resting_time = airplane2.resting_time + time()-airplane2.immediately_time;
+
+if (airplane2.TBM <Th & airplane2.CBM <Th){
 airplane2.TBM = 100;
 airplane2.CBM = 100;
 }
@@ -3142,7 +3923,11 @@ airplane2.maintenence = false;
 MO1.unblock();
 MO2.unblock();
 MO3.unblock();
-MO4.unblock();]]></Code>
+MO4.unblock();
+MO5.unblock();
+
+hold1.unblock();
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3214,7 +3999,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[15]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -3242,9 +4027,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[airplane2.TBM = airplane2.TBM - TBM;
-airplane2.CBM = airplane2.CBM - agent.workload;
-if(airplane2.TBM <TBM | airplane2.CBM < agent.workload)
+								<Code><![CDATA[if(airplane2.TBM <TBM | airplane2.CBM < agent.workload)
 {hold1.block();}]]></Code>
 							</Value>
 						</Parameter>
@@ -3316,9 +4099,6 @@ if(airplane2.TBM <TBM | airplane2.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[hold1.unblock();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destroyEntity]]></Name>
@@ -3606,17 +4386,18 @@ if(airplane2.TBM <TBM | airplane2.CBM < agent.workload)
 
 
 if (airplane3.TBM <Th & airplane3.CBM <Th){
-agent.MT = 50;
+agent.MT = OMT;
 }
 else if (airplane3.TBM <TBM){
-agent.MT = 40;
+agent.MT = TBMT;
 }
 
 else {
-agent.MT = 30;
+agent.MT = CBMT;
 }
 
-airplane3.maintenence = false;]]></Code>
+airplane3.maintenence = false;
+airplane3.immediately_time = time();]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -3787,6 +4568,7 @@ MO1.block();
 MO2.block();
 MO3.block();
 MO4.block();
+MO5.block();
 }]]></Code>
 							</Value>
 						</Parameter>
@@ -3796,7 +4578,14 @@ MO4.block();
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[if (airplane3.TBM <Th & airplane3.CBM <Th){
+								<Code><![CDATA[
+airplane3.idle = true;
+airplane3.shape = 0;
+airplane3.Resting_Time = 0;
+
+airplane3.resting_time = airplane3.resting_time + time()-airplane3.immediately_time;
+
+if (airplane3.TBM <Th & airplane3.CBM <Th){
 airplane3.TBM = 100;
 airplane3.CBM = 100;
 }
@@ -3815,7 +4604,10 @@ airplane3.maintenence = false;
 MO1.unblock();
 MO2.unblock();
 MO3.unblock();
-MO4.unblock();]]></Code>
+MO4.unblock();
+MO5.unblock();
+
+hold2.unblock();]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3887,7 +4679,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[15]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -3915,9 +4707,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[airplane3.TBM = airplane3.TBM - TBM;
-airplane3.CBM = airplane3.CBM - agent.workload;
-if(airplane3.TBM <TBM | airplane3.CBM < agent.workload)
+								<Code><![CDATA[if(airplane3.TBM <TBM | airplane3.CBM < agent.workload)
 {hold2.block();}]]></Code>
 							</Value>
 						</Parameter>
@@ -3989,10 +4779,6 @@ if(airplane3.TBM <TBM | airplane3.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[hold2.unblock();
-airplane3.Resting_Time = time();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destroyEntity]]></Name>
@@ -4280,18 +5066,19 @@ airplane3.Resting_Time = time();]]></Code>
 
 
 if (airplane4.TBM <Th & airplane4.CBM <Th){
-agent.MT = 50;
+agent.MT = OMT;
 }
 else if (airplane4.TBM <TBM){
-agent.MT = 40;
+agent.MT = TBMT;
 }
 
 else {
 airplane4.CBM = 100;
-agent.MT = 30;
+agent.MT = CBMT;
 }
 
-airplane4.maintenence = false;]]></Code>
+airplane4.maintenence = false;
+airplane4.immediately_time = time();]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4462,6 +5249,7 @@ MO1.block();
 MO2.block();
 MO3.block();
 MO4.block();
+MO5.block();
 }
 ]]></Code>
 							</Value>
@@ -4472,7 +5260,13 @@ MO4.block();
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[if (airplane4.TBM <Th & airplane4.CBM <Th){
+								<Code><![CDATA[airplane4.idle = true;
+airplane4.shape = 0;
+airplane4.Resting_Time = 0;
+
+airplane4.resting_time = airplane4.resting_time + time()-airplane4.immediately_time;
+
+if (airplane4.TBM <Th & airplane4.CBM <Th){
 airplane4.TBM = 100;
 airplane4.CBM = 100;
 }
@@ -4491,7 +5285,11 @@ airplane4.maintenence = false;
 MO1.unblock();
 MO2.unblock();
 MO3.unblock();
-MO4.unblock();]]></Code>
+MO4.unblock();
+MO5.unblock();
+
+hold3.unblock();
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -4563,7 +5361,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[delayTime]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[15]]></Code>
 								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 							</Value>
 						</Parameter>
@@ -4591,9 +5389,7 @@ MO4.unblock();]]></Code>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[airplane4.TBM = airplane4.TBM - TBM;
-airplane4.CBM = airplane4.CBM - agent.workload;
-if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
+								<Code><![CDATA[if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 {hold3.block();}]]></Code>
 							</Value>
 						</Parameter>
@@ -4665,9 +5461,6 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 					<Parameters>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[hold3.unblock();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destroyEntity]]></Name>
@@ -4938,6 +5731,9 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane1.idle = false;]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -5013,6 +5809,9 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane2.idle = false;]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -5088,6 +5887,9 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane3.idle = false;]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -5163,6 +5965,9 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane4.idle = false;]]></Code>
+							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -5192,6 +5997,858 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 					<LongitudeCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
 					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969946</Id>
+					<Name><![CDATA[Checking4]]></Name>
+					<X>490</X><Y>638</Y>
+					<Label><X>-5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[SelectOutput]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[SelectOutput]]></ClassName>
+							<ItemName><![CDATA[1412336242931]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[conditionIsProbabilistic]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[false]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[(airplane5.TBM >TBM & airplane5.CBM >agent.workload) | (airplane5.maintenence == true)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[probability]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTrue]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitFalse]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane5.maintenence = true;
+
+
+if (airplane5.TBM <Th & airplane5.CBM <Th){
+agent.MT = OMT;
+}
+else if (airplane5.TBM <TBM){
+agent.MT = TBMT;
+}
+
+else {
+airplane5.CBM = 100;
+agent.MT = CBMT;
+}
+
+airplane5.maintenence = false;
+airplane5.immediately_time = time();]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969950</Id>
+					<Name><![CDATA[sink8]]></Name>
+					<X>830</X><Y>638</Y>
+					<Label><X>-10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Sink]]></ClassName>
+							<ItemName><![CDATA[1412336242929]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane5.Resting_Time = time();]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destroyEntity]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969954</Id>
+					<Name><![CDATA[Maintenence4]]></Name>
+					<X>620</X><Y>658</Y>
+					<Label><X>-15</X><Y>45</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[agent.MT]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane5.moveTo(node_maintentence);
+maintenence_office.capacity = maintenence_office.capacity -1;
+
+if (maintenence_office.capacity==0){
+MO1.block();
+MO2.block();
+MO3.block();
+MO4.block();
+MO5.block();
+}
+]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane5.idle = true;
+airplane5.shape = 0;
+airplane5.Resting_Time = 0;
+
+airplane5.resting_time = airplane5.resting_time + time()-airplane5.immediately_time;
+
+if (airplane5.TBM <Th & airplane5.CBM <Th){
+airplane5.TBM = 100;
+airplane5.CBM = 100;
+}
+else if (airplane5.TBM <TBM){
+airplane5.TBM = 100;
+}
+
+else {
+airplane5.CBM = 100;
+}
+
+airplane5.moveTo(node5);
+maintenence_office.capacity = maintenence_office.capacity +1;
+airplane5.maintenence = false;
+
+MO1.unblock();
+MO2.unblock();
+MO3.unblock();
+MO4.unblock();
+MO5.unblock();
+
+hold4.unblock();
+]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969958</Id>
+					<Name><![CDATA[Mission_proceed4]]></Name>
+					<X>400</X><Y>628</Y>
+					<Label><X>-25</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Delay]]></ClassName>
+							<ItemName><![CDATA[1412336242930]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[type]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[15]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[pushProtocol]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[if(airplane5.TBM <TBM | airplane5.CBM < agent.workload)
+{hold4.block();}]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969962</Id>
+					<Name><![CDATA[sink9]]></Name>
+					<X>830</X><Y>668</Y>
+					<Label><X>-10</X><Y>30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Sink]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Sink]]></ClassName>
+							<ItemName><![CDATA[1412336242929]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[destroyEntity]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969966</Id>
+					<Name><![CDATA[queue4]]></Name>
+					<X>290</X><Y>628</Y>
+					<Label><X>-5</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[true]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[entityLocation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[queuing]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969970</Id>
+					<Name><![CDATA[hold4]]></Name>
+					<X>350</X><Y>638</Y>
+					<Label><X>-5</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane1.maintenence == true;]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655100969974</Id>
+					<Name><![CDATA[MO5]]></Name>
+					<X>560</X><Y>667</Y>
+					<Label><X>-5</X><Y>30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Hold]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Hold]]></ClassName>
+							<ItemName><![CDATA[1412336242940]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[mode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[nEntitiesForSelfBlock]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[condition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[initiallyBlocked]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[airplane5.idle = false;]]></Code>
+							</Value>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1655101100646</Id>
+					<Name><![CDATA[airplane5]]></Name>
+					<X>340</X><Y>120</Y>
+					<Label><X>-30</X><Y>-25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[airport_maintenance]]></PackageName>
+						<ClassName><![CDATA[Airplane1]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[airport_maintenance]]></PackageName>
+							<ClassName><![CDATA[Airplane1]]></ClassName>
+							<ItemName><![CDATA[1654762847042]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[TBM]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[CBM]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[Resting_Time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[idle]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maintenence]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[shape]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[operating_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resting_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[immediately_time]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[period_count]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InEnvironment>true</InEnvironment>	
+					<InitialLocationType>NODE</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<NodeCode><![CDATA[node4]]></NodeCode>
 					<LocationNameCode Class="CodeValue">
 						<Code><![CDATA[""]]></Code>
 					</LocationNameCode>
@@ -7592,6 +9249,104 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
 					<LimitNumberOfTransporters>false</LimitNumberOfTransporters>
 					<LimitNumberOfTransportersValue>10</LimitNumberOfTransportersValue>
 				</Path>
+				<Path SourceId="1654844830056" TargetId="1655101109531">
+					<Id>1655101118726</Id>
+					<Name><![CDATA[path8]]></Name>
+					<X>170</X><Y>-520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-14774017</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineWidth>1</LineWidth>
+					<PathType>dashedLine</PathType>
+					
+					<Width Class="UnitValue">
+						<Value Class="Double">1</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Width>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-20.801</X><Y>-13.867999999999995</Y><Z>0</Z></Point>
+						<Point><X>16.27</X><Y>18.981</Y><Z>0</Z></Point>
+						<Point><X>120</X><Y>139.99599999999998</Y><Z>0</Z></Point>
+						<Point><X>103.73</X><Y>121.015</Y><Z>0</Z></Point>
+						<Point><X>0.198</X><Y>59.984</Y><Z>0</Z></Point>
+					</Points>
+					<Bidirectional>true</Bidirectional>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="CodeUnitValue">
+						<Code><![CDATA[10.0]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+					<LimitNumberOfTransporters>false</LimitNumberOfTransporters>
+					<LimitNumberOfTransportersValue>10</LimitNumberOfTransportersValue>
+				</Path>
+				<PointNode>
+					<Id>1655101109531</Id>
+					<Name><![CDATA[node5]]></Name>
+					<X>320</X><Y>-380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>false</FakeNode>	
+					<Lock>false</Lock>
+					<Color>-14774017</Color>
+					<Radius>30</Radius>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">10</Value>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+				</PointNode>
+				<Path SourceId="1655101109531" TargetId="1654846845864">
+					<Id>1655101128842</Id>
+					<Name><![CDATA[path9]]></Name>
+					<X>350</X><Y>-380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LineColor>-14774017</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineWidth>1</LineWidth>
+					<PathType>dashedLine</PathType>
+					
+					<Width Class="UnitValue">
+						<Value Class="Double">1</Value>
+						<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+					</Width>
+					<Points>
+						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>17.799999999999997</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>390.066</X><Y>0.004</Y><Z>0</Z></Point>
+						<Point><X>365.066</X><Y>0.004</Y><Z>0</Z></Point>
+						<Point><X>390.952</X><Y>24.988</Y><Z>0</Z></Point>
+						<Point><X>400</X><Y>280</Y><Z>0</Z></Point>
+						<Point><X>399.114</X><Y>255.016</Y><Z>0</Z></Point>
+						<Point><X>375</X><Y>280</Y><Z>0</Z></Point>
+						<Point><X>-20</X><Y>280</Y><Z>0</Z></Point>
+						<Point><X>5</X><Y>280</Y><Z>0</Z></Point>
+						<Point><X>-45</X><Y>280</Y><Z>0</Z></Point>
+					</Points>
+					<Bidirectional>true</Bidirectional>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="CodeUnitValue">
+						<Code><![CDATA[10.0]]></Code>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+					<LimitNumberOfTransporters>false</LimitNumberOfTransporters>
+					<LimitNumberOfTransportersValue>10</LimitNumberOfTransportersValue>
+				</Path>
 			</Presentation>
 
 					<Z>0</Z>
@@ -7837,15 +9592,23 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
     private String name;
     private double TBM;
     private double residual;
+    private boolean idle;
 
-    public Airport(String name, double TBM, double residual) {
+    public Airport(String name, double TBM, double residual,boolean idle) {
         this.name = name;
         this.TBM = TBM;
         this.residual = residual;
+        this.idle = idle;
     }
     
     public double getTBM(){
     	return this.TBM;
+    }
+    public boolean getIdle(){
+    	return this.idle;
+    }
+    public double getresidual(){
+    	return this.residual;
     }
     public void setResidual(double R){
     	this.residual = R;
@@ -7856,16 +9619,18 @@ if(airplane4.TBM <TBM | airplane4.CBM < agent.workload)
                 "name='" + name + '\'' +
                 ", TBM=" + TBM + '\'' + 
                 ", Residual=" + residual +
+                ", IDLE=" + idle +
                 '}';
     }
 }
      
 List<Airport> Airports = new ArrayList<>();
-Airports.add(new Airport("airplane4", airplane4.TBM, 0));
-Airports.add(new Airport("airplane3", airplane3.TBM, 0));
-Airports.add(new Airport("airplane2", airplane2.TBM, 0));
-Airports.add(new Airport("airplane1", airplane1.TBM, 0));
+Airports.add(new Airport("airplane4", airplane4.TBM, 0, airplane4.idle));
+Airports.add(new Airport("airplane3", airplane3.TBM, 0,airplane3.idle));
+Airports.add(new Airport("airplane2", airplane2.TBM, 0, airplane2.idle));
+Airports.add(new Airport("airplane1", airplane1.TBM, 0, airplane1.idle));
 
+traceln("ORIGINAL STATE");
 traceln(Airports);
 traceln();
 Collections.sort(Airports, new Comparator<Airport>(){
@@ -7877,31 +9642,116 @@ Collections.sort(Airports, new Comparator<Airport>(){
 	}
 });
 
+traceln("Sorting TBM");
 traceln(Airports);
+traceln();
+
 Airports.get(0).setResidual(
-Airports.get(0).getTBM()-0
+Airports.get(0).getTBM() + (100 - Airports.get(3).getTBM())
 );
 
 Airports.get(1).setResidual(
-Airports.get(2).getTBM()-Airports.get(1).getTBM()
+Airports.get(1).getTBM()- Airports.get(0).getTBM()
 );
 
 Airports.get(2).setResidual(
-Airports.get(3).getTBM()-Airports.get(2).getTBM()
+Airports.get(2).getTBM()- Airports.get(1).getTBM()
 );
 
 Airports.get(3).setResidual(
-100-Airports.get(3).getTBM()
+Airports.get(3).getTBM()- Airports.get(2).getTBM()
 );
 
+// 바쁘면,Reisdual 0
+for(int i = 0; i<=3; i++){
+
+	if (Airports.get(i).getIdle() == false){
+	Airports.get(i).setResidual(0);}
+}
+
+traceln("Calculating Residual");
 traceln(Airports);
-]]></ActionCode>
+traceln();
+
+Collections.sort(Airports, new Comparator<Airport>(){
+	@Override
+	public int compare(Airport p1, Airport p2){
+	if(p1.getresidual() > p2.getresidual()){return -1;}
+	else if (p1.getresidual() < p2.getresidual()){return 1;}
+	else{return 0;}
+	}
+});
+
+traceln("Sorting Residual");
+traceln(Airports);
+traceln();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<LabelText><![CDATA[button]]></LabelText>
 					</ExtendedProperties>
 				</Control>
+    			<TimeStackChart>
+					<Id>1655104400687</Id>
+					<Name><![CDATA[chart1]]></Name>
+					<X>-370</X><Y>40</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1655107200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<TimeWindowExpression><![CDATA[100]]></TimeWindowExpression>
+					<DatasetExpression>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-3137392</Color>
+					<Expression2><![CDATA[((airplane1.resting_time + airplane2.resting_time + airplane3.resting_time + airplane4.resting_time + airplane5.resting_time)/5)/(time() + 0.0001)]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>  
+							<Title><![CDATA[resting_percentage]]></Title>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>FIXED</VerScaleType>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimeStackChart>
 			</Presentation>
 
 				</Level>
@@ -8065,11 +9915,11 @@ traceln(Airports);
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
 						<Type><![CDATA[]]></Type>
 						<UnitType><![CDATA[TIME]]></UnitType>
-						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
+						<UnitOfValue Class="TimeUnits"><![CDATA[SECOND]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
 							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1654826644028</Id>
@@ -8143,8 +9993,111 @@ traceln(Airports);
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1654848729374</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1655096252345</Id>
+					<Name><![CDATA[operating_time]]></Name>
+					<X>370</X><Y>290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1655096252343</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1655096309129</Id>
+					<Name><![CDATA[resting_time]]></Name>
+					<X>370</X><Y>330</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1655096309127</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1655096398345</Id>
+					<Name><![CDATA[immediately_time]]></Name>
+					<X>370</X><Y>360</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1655096398343</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1655099568122</Id>
+					<Name><![CDATA[period_count]]></Name>
+					<X>370</X><Y>110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<UnitOfValue Class="TimeUnits"><![CDATA[MINUTE]]></UnitOfValue>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1655099568120</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
@@ -8669,6 +10622,9 @@ traceln(Airports);
 						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1654848800255</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
@@ -10630,7 +12586,7 @@ traceln(Airports);
 	<TimeAccuracy>1.0E-5</TimeAccuracy>
 	<Frame>
 		<Width>1040</Width>
-		<Height>630</Height>
+		<Height>710</Height>
 	</Frame>
 	<Database>
 		<Logging>false</Logging>
