@@ -1,0 +1,371 @@
+import pandas as pd
+import numpy as np
+import random
+import itertools
+import sys
+
+# seed_number = 4
+# seed_number = 40
+seed_number = 1
+num_FR = int(sys.argv[1])
+num_option = int(sys.argv[2])
+num_DP = int(sys.argv[3])
+Seed_start = int(sys.argv[4])
+Seed_end = int(sys.argv[5])
+full_length = 1
+time_calculation = []
+conflict_seed = []
+
+print("NUM_FR : ", num_FR)
+print("NUM_OPTION : ", num_option)
+print("NUM_DP : ", num_DP)
+
+
+def PFO_make(num_FR, num_option):
+    PFO = np.zeros([num_FR, num_option])
+    for i in range(num_FR):
+        num_effected_OP = random.sample([k + 1 for k in range(num_option)], k=1)[0]
+
+        possible_effected_OP = [k for k in range(num_option)]
+
+        effected_OP = random.sample(possible_effected_OP, k=num_effected_OP)
+        signed_OP = random.choices([1, -1], weights=(60, 40), k=num_effected_OP)
+
+        for j in range(num_effected_OP):
+            PFO[i][effected_OP[j]] = signed_OP[j]
+    return PFO
+
+
+def OD_make(num_option, num_DP):
+    OD = np.zeros([num_option, num_DP])
+    for i in range(num_option):
+        num_effected_DP = random.choices([1, 2, 3], weights=(45, 45, 10), k=1)[0]
+
+        possible_effected_DP = [k for k in range(num_DP)]
+
+        effected_DP = random.sample(possible_effected_DP, k=num_effected_DP)
+        signed_DP = random.choices([1, -1], weights=(60, 40), k=num_effected_DP)
+
+        for j in range(num_effected_DP):
+            OD[i][effected_DP[j]] = signed_DP[j]
+    return OD
+
+
+def one_hot_encoding(DP_list):
+    fulllist = []
+    for k in range(len(DP_list)):
+        if DP_list[k] != 0:
+            imme_list = np.zeros(len(DP_list))
+            imme_list[k] = DP_list[k]
+            fulllist.append(imme_list)
+    return fulllist
+
+
+def checking_DP(Option_candidates):
+    total_DP = []
+    for i in range(num_DP):
+        negative_sign = 0
+        positive_sign = 0
+
+        for j in Option_candidates:
+            if np.sign(j) * OD[abs(j) - 1][i] == -1:
+                negative_sign += 1
+            elif np.sign(j) * OD[abs(j) - 1][i] == 1:
+                positive_sign += 1
+
+        if (negative_sign > 0) and (positive_sign > 0):
+            print("conflict exists on DP-level", Option_candidates, ", DP : ", i + 1)
+            return False, False
+
+        elif (negative_sign == 0) and (positive_sign == 0):
+            total_DP.append(0)
+        elif negative_sign > 0:
+            total_DP.append(-1)
+        else:
+            total_DP.append(1)
+
+    return total_DP, Option_candidates
+
+
+# 각 DP 마다 path 만들기
+def path_make(DP_index):
+    num_path = random.randint(1, 3)
+    path_DP = np.zeros((num_path, 1, num_DP))
+
+    for i in range(len(path_DP)):
+        possible_effected_DP = [k for k in range(num_DP) if k != DP_index]
+        num_effected_DP = random.choices([0, 1, 2, 3], weights=(5, 35, 50, 10), k=1)[0]
+        effected_DP = random.sample(possible_effected_DP, k=num_effected_DP)
+        signed_DP = random.choices([1, -1], weights=(60, 40), k=num_effected_DP)
+
+        for j in range(num_effected_DP):
+            path_DP[i][0][effected_DP[j]] = signed_DP[j]
+
+    return path_DP
+
+
+# 각 path중 하나를 골라서 path_matrix 만들기
+def make_PM(combination_index):
+    empty_list = []
+    for i in range(len(combination_index)):
+        empty_list.append(combination_index[i][0])
+
+    return np.matrix(empty_list)
+
+
+# 각 DP 마다 path 만들기
+def path_make(DP_index):
+    num_path = random.choices([1, 2, 3], weights=(50, 40, 10), k=1)[0]
+    path_DP = np.zeros((num_path, 1, num_DP))
+
+    for i in range(len(path_DP)):
+        possible_effected_DP = [k for k in range(num_DP) if k != DP_index]
+        num_effected_DP = random.choices([0, 1, 2, 3], weights=(5, 35, 50, 10), k=1)[0]
+        effected_DP = random.sample(possible_effected_DP, k=num_effected_DP)
+        signed_DP = random.choices([1, -1], weights=(60, 40), k=num_effected_DP)
+
+        for j in range(num_effected_DP):
+            path_DP[i][0][effected_DP[j]] = signed_DP[j]
+
+    return path_DP
+
+
+# seed_number = 17 엄청 오래 걸림
+# seed_number = 20 conflict 최소가 3
+
+def dot_and_preprocessing(X, path_matrix):
+    output = np.array(np.dot(X, path_matrix)).reshape(-1)
+    output = np.array([int(np.sign(x)) for x in output])
+
+    return output
+
+
+def detection_conflict(imme_list):
+    for index in range(len(imme_list[0])):
+        sign_assigned = 0
+        for number in range(len(imme_list)):
+            if sign_assigned == 0:
+                sign_assigned = int(np.sign(imme_list[number][index]))
+            else:
+                if sign_assigned == -1 * int(np.sign(imme_list[number][index])):
+                    return False
+    return True
+
+
+def calculate_conflict_combination(Combination, listing=False):
+    Full_list = []
+    for combination in Combination:
+        full_list = []
+        for j in range(num_DP):
+            total_index = 0
+            for k in [0, 1, 2, 3]:
+                total_index += combination[k][j]
+            full_list.append(int(np.sign(total_index)))
+        Full_list.append(full_list)
+
+    conflict_degree = 0
+    for i in range(len(Full_list[0])):
+        negative_sign = 0
+        positive_sign = 0
+
+        for j in range(len(Full_list)):
+            if np.sign(Full_list[j][i]) == -1:
+                negative_sign += 1
+            elif np.sign(Full_list[j][i]) == 1:
+                positive_sign += 1
+        #         print("positive_sign : " , positive_sign)
+        #         print("negative_sign : ", negative_sign)
+
+        #         print("_________________")
+        if (negative_sign > 0) and (positive_sign > 0):
+            conflict_degree += 1
+    #     print("conflcit_degree :", conflict_degree)
+
+    return conflict_degree, Combination
+
+
+for seed_number in range(Seed_start, Seed_end):
+    random.seed(seed_number)
+    break_output = 0
+
+    random.seed(seed_number)
+
+    PFO = PFO_make(num_FR, num_option)
+    OD = OD_make(num_option, num_DP)
+
+    FR_index = ["FR_{}".format(i + 1) for i in range(num_FR)]
+    Opt_index = ["Opt_{}".format(i + 1) for i in range(num_option)]
+    DP_index = ["DP_{}".format(i + 1) for i in range(num_DP)]
+
+    random.seed(seed_number)
+
+    # 각 path중 하나를 골라서 path_matrix 만들기
+
+    random.seed(seed_number)
+    path_DP_list = []
+    for i in range(num_DP):
+        num_path = random.randint(1, 3)
+        path_DP_list.append(path_make(i))
+
+    import itertools
+
+    # 가능한 모든 조합 생성
+    combinations = list(itertools.product(*path_DP_list))
+
+    # PM matrix 만들기
+    PM_list = []
+    for i in combinations:
+        PM_list.append(make_PM(i))
+
+    # phase 1-1 FR - Option
+    Z = []
+    for i in range(len(PFO)):
+        Z.append([int((k + 1) * PFO[i][k]) for k in range(len(PFO[i])) if PFO[i][k] != 0])
+    combinations = list(itertools.product(*Z))
+
+    Possible_Option_Candidates = []
+    for k in combinations:
+        kk = list(k)
+        kkk = [abs(j) for j in kk]
+        if len(kkk) == len(set(kkk)):
+            Possible_Option_Candidates.append(kk)
+
+    Initated_DP_Candidates = []
+    Initated_OP_Candidates = []
+    for i in Possible_Option_Candidates:
+        A, B = checking_DP(i)
+        if A != False:
+            Initated_DP_Candidates.append(A)
+            Initated_OP_Candidates.append(B)
+
+            # 경로 중 conflict 가장 적은 해 찾기
+    import time
+    import sys
+
+    num_min = 0
+    min_conflict = 10000
+    conflict_list = []
+    combination_list = []
+    total_conflict_set = []
+
+    start = time.time()
+    too_much_time = 0
+
+    for i in range(len(Initated_DP_Candidates)):
+        Full_combination = []
+        print("{}/{} START".format(i + 1, len(Initated_DP_Candidates)))
+        if (min_conflict == 0) and (num_min >= 4):
+            end = time.time()
+            print("There is too much way with conflict 0")
+            break
+
+        if too_much_time == 1 :
+            too_much_time = 0
+            conflict_list = ["Time over"]
+            break
+
+        DP_list = one_hot_encoding(Initated_DP_Candidates[i])
+        imme_list = []
+        path_list = []
+
+        for j in range(len(DP_list)):
+            print("    {}/{} START".format(j + 1, len(DP_list)))
+
+            first_prop = []
+            second_prop = []
+            third_prop = []
+            imme_list = []
+
+            imme_full_list_check = []
+
+            # First prop
+            for path_matrix in PM_list:
+                first_prop.append(np.dot(DP_list[j], path_matrix))
+
+            first_prop = np.unique(first_prop, axis=0)
+            first_prop = first_prop.reshape(len(first_prop), -1)
+            for path_matrix in PM_list:
+                first_prop = dot_and_preprocessing(DP_list[j], path_matrix)
+                second_prop = dot_and_preprocessing(first_prop, path_matrix)
+                third_prop = dot_and_preprocessing(second_prop, path_matrix)
+                imme_imme_list = [DP_list[j], first_prop, second_prop, third_prop]
+
+                if detection_conflict(imme_imme_list) == True:
+                    A = [DP_list[j].tolist() + first_prop.tolist() + second_prop.tolist() +
+                         third_prop.tolist()][0]
+                    A = [int(k) for k in A]
+
+                    if A not in imme_full_list_check:
+                        imme_full_list_check.append(A)
+                        imme_list.append(imme_imme_list)
+
+            path_list.append(imme_list)
+        print("{}/{} Full_combination START".format(i + 1, len(Initated_DP_Candidates)))
+
+
+        def product_generator(path_list):
+            for element in itertools.product(*path_list):
+                yield element
+
+
+        full_length = 1
+        for leng in range(len(path_list)):
+            full_length *= len(path_list[leng])
+
+        print("Full_combination : ", full_length)
+
+        # print("FULL_COMBINATION : ", len(Full_combination))
+        start_index = -1
+        com_start = time.time()
+
+        for full_combination in product_generator(path_list):
+            full_combination = list(full_combination)
+            com_end = time.time()
+            if (com_end - com_start) >= 300:
+                break
+
+            if (com_end - start) >= 1800 :
+                too_much_time = 1
+                break
+
+            start_index += 1
+            if start_index % 100000 == 0:
+                print("{}/{} Full_combination progressing".format(start_index, full_length))
+            conflict_degree, combination = calculate_conflict_combination(full_combination)
+            if conflict_degree not in total_conflict_set:
+                total_conflict_set.append(conflict_degree)
+            if min_conflict > conflict_degree:
+                conflict_list = [conflict_degree]
+                combination_list = [combination]
+                min_conflict = conflict_degree
+                num_min = 1
+
+
+            elif (min_conflict == conflict_degree) and num_min <= 4:
+                conflict_list.append(conflict_degree)
+                combination_list.append(combination)
+                num_min += 1
+
+            if (min_conflict == 0) and (num_min >= 4):
+                end = time.time()
+                print(round(end - start, 2))
+                break_output = 1
+                Full_combination = []
+                break
+    end = time.time()
+
+    print("__________RESULT_______________________")
+    print("seed number : ", seed_number)
+    print("TOTAL Full_combination : ", full_length)
+    print("TIME : ", round(end - start, 2))
+    print(conflict_list)
+    print(total_conflict_set)
+    time_calculation.append(round(end - start, 2))
+    if len(conflict_list):
+        conflict_seed.append(conflict_list[0])
+    else:
+        conflict_seed.append("Na")
+
+print("_____________FINAL RESULT(WHOLE SEED)___________________")
+print("TOTAL TIME_CALCULATION :", time_calculation)
+print("TOTAL CONFLICT_MIN_LIST :", conflict_seed)

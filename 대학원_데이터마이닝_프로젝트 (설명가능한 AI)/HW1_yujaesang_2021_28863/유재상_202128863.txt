@@ -1,0 +1,16 @@
+1)  (2점) Week 2 - Logistic Regression with a Neural Network mindset
+7개 (7 / 7)
+2)  (2점) Week 3 - Planar data classification with a hidden layer
+11개 (11/11)
+3)  (2점) Week 4 - Building your Deep Neural Network: Step by Step
+6개 (6/6)
+4)  (2점) Week 4 - Deep Neural Network: Application
+5개 (5/5)
+5)  (2점) Week 1 - Initialization
+3개 (3/3)
+6)  (2점) Week 1 - Regularization
+4개 (4/4)
+7)  (2점) Week 1 - Gradient Checking
+7개 (4/4)
+8)  (2점) Week 2 - Optimization
+6개 (6/6)
